@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+  <body class="font-asap">
+    <!-- hamburguesa -->
+    <div class="navigation z-[200]">
+      <button
+        aria-label="hamburguer"
+        type="button"
+        class="hamburger"
+        id="position"
+        onclick="show()"
+      >
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 2L2 18M18 18L2 2"
+            stroke="white"
+            stroke-width="2.66667"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <nav class="menu-list">
+        <ul>
+          <li>
+            <a href="index.html" class="">Home</a>
+          </li>
+          <li>
+            <a href="seParte.html" class="">Sé parte de nosotros</a>
+          </li>
+          <li>
+            <a href="blog.html" class="">Blog y Eventos</a>
+          </li>
+          <li>
+            <a href="#" class="">Quiero apoyar</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="flex justify-center items-center py-8">
+        <img src="./images/img/logotipo.png" alt="uniyop" />
+      </div>
+      <div class="bg-bgCeleste text-textWhite">
+        <div
+          class="w-11/12 mx-auto py-5"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <nav
+            class="hidden 2md:flex justify-center items-center gap-24 font-semibold text-text18 md:text-text26 lg:text-text30 py-5 text-center"
+          >
+            <a href="index.html" class="leading-none">Home</a>
+            <a href="seParte.html" class="leading-none">Sé parte de nosotros</a>
+            <a href="blog.html" class="leading-none">Blog y Eventos</a>
+            <a
+              href="#apoyar"
+              class="bg-bgAzulMarino leading-none py-5 rounded-2xl px-5"
+              >Quiero apoyar</a
+            >
+          </nav>
+
+          <div class="2md:hidden flex items-center">
+            <button aria-label="hamburguer" class="hamburger" onclick="show()">
+              <img
+                src="./images/svg/menu.svg"
+                alt="menu hamburguesa"
+                class="w-[1000px]"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-[url(../images/img/image_10.png)] bg-cover bg-center bg-no-repeat sm:w-full h-full text-textWhite"
+      >
+        <div
+          class="w-11/12 mx-auto flex flex-col items-center gap-28 py-32"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <h1
+            class="font-semibold text-text40 md:text-text68 leading-none md:leading-tight text-center w-full lg:w-2/3"
+          >
+            Capacitaciones y Charlas para la Prevención de la Violencia
+            Doméstica
+          </h1>
+          <div
+            class="font-semibold text-text16 md:text-text20 flex flex-col items-center gap-2"
+          >
+            <div class="flex justify-center items-center">
+              <img src="./images/img/image_11.png" alt="user" />
+            </div>
+            <p>Camila Arias</p>
+            <p>15 Feb. 2024. 4min</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end relative">
+        <div class="fixed bottom-[30px] right-[30px] z-[100]">
+          <a href="#">
+            <img
+              src="./images/img/image_45.png"
+              alt="whatsapp"
+              class="w-20 h-20 md:w-full md:h-full"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="my-24 w-11/12 md:w-8/12 mx-auto">
+      <section
+        class="flex flex-col gap-12 md:gap-24"
+        data-aos="fade-up"
+        data-aos-offset="150"
+      >
+        <div class="flex flex-col gap-5">
+          <h2
+            class="text-text40 md:text-text44 font-semibold leading-none md:leading-tight text-textAzul"
+          >
+            Aenean tristique enim tellus
+          </h2>
+
+          <div
+            class="font-normal text-text20 md:text-text24 text-textGray flex flex-col gap-5"
+          >
+            <p>
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc
+              sed odio vestibulum, vulputate mi a, sollicitudin ante. Praesent
+              quis nibh venenatis, suscipit mauris vel, aliquam lorem. Nam
+              pellentesque ligula non tristique euismod. Curabitur condimentum
+              neque felis, sit amet placerat mauris gravida vel. Fusce
+              ullamcorper nisl.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center items-center">
+          <img
+            src="./images/img/image_12.png"
+            alt="uniyop"
+            class="w-full h-full"
+          />
+        </div>
+
+        <div
+          class="font-normal text-text20 md:text-text24 text-textGray flex flex-col gap-5"
+        >
+          <p>
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc
+            sed odio vestibulum, vulputate mi a, sollicitudin ante. Praesent
+            quis nibh venenatis, suscipit mauris vel, aliquam lorem. Nam
+            pellentesque ligula non tristique euismod. Curabitur condimentum
+            neque felis, sit amet placerat mauris gravida vel. Fusce ullamcorper
+            nisl.
+          </p>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+        </div>
+
+        <div>
+          <div
+            class="flex flex-wrap gap-4 justify-center font-normal text-text20 md:text-text24 text-textGray"
+          >
+            <p
+              class="bg-[#F7F8FA] flex-grow text-justify border-l-8 border-[#3D8BF2] rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12 italic"
+            >
+              “Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.”
+            </p>
+          </div>
+        </div>
+
+        <div class="font-normal text-text20 md:text-text24 text-textGray">
+          <p>
+            Praesent quis nibh venenatis, suscipit mauris vel, aliquam lorem.
+            Nam pellentesque ligula non tristique euismod. Curabitur condimentum
+            neque felis, sit amet placerat mauris gravida vel. Fusce ullamcorper
+            nisl.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col gap-5"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <h2
+            class="text-text40 md:text-text44 font-semibold leading-none md:leading-tight text-textAzul"
+          >
+            Aenean tristique enim tellus
+          </h2>
+
+          <div
+            class="font-normal text-text20 md:text-text24 text-textGray flex flex-col gap-5"
+          >
+            <p>
+              Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc
+              sed odio vestibulum, vulputate mi a, sollicitudin ante. Praesent
+              quis nibh venenatis, suscipit mauris vel, aliquam lorem. Nam
+              pellentesque ligula non tristique euismod. Curabitur condimentum
+              neque felis, sit amet placerat mauris gravida vel. Fusce
+              ullamcorper nisl.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-5">
+          <div
+            class="flex flex-col 2md:flex-row justify-center items-center gap-8 text-text14 md:text-text18 font-normal"
+          >
+            <div class="rounded-full bg-bgGreen text-textGreen px-5 py-1">
+              <span>Tag uno</span>
+            </div>
+            <div class="rounded-full bg-bgRosa text-textPurpose px-5 py-1">
+              <span>Tag dos</span>
+            </div>
+            <div class="rounded-full bg-bgPink text-textPink px-5 py-1">
+              <span>Tag tres</span>
+            </div>
+            <div class="rounded-full bg-bgOrange text-textOrange px-5 py-1">
+              <span>Tag cuatro</span>
+            </div>
+          </div>
+          <div class="flex flex-col gap-5 justify-center items-center">
+            <p class="text-textGray font-semibold text-text20 md:text-text24">
+              Compartir post
+            </p>
+            <div>
+              <div class="flex items-center gap-16">
+                <a href="#">
+                  <div>
+                    <svg
+                      width="12"
+                      height="28"
+                      viewBox="0 0 12 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.73395 5.22556H11.908V1.0062C11.5329 0.948703 10.243 0.819336 8.74071 0.819336C5.6062 0.819336 3.45898 3.01637 3.45898 7.05439V10.7707H0V15.4876H3.45898V27.3562H7.69984V15.4887H11.0189L11.5458 10.7718H7.69885V7.52211C7.69984 6.15877 8.02927 5.22556 9.73395 5.22556Z"
+                        fill="white"
+                        class="fill-fillCeleste"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div>
+                    <svg
+                      width="29"
+                      height="29"
+                      viewBox="0 0 29 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M28.9082 3.40266C27.867 3.96481 26.7575 4.33743 25.6007 4.51835C26.7907 3.64389 27.699 2.26974 28.126 0.613429C27.0165 1.42758 25.7915 2.00266 24.486 2.32358C23.4325 0.942968 21.931 0.0878906 20.293 0.0878906C17.115 0.0878906 14.5565 3.26266 14.5565 7.15466C14.5565 7.71466 14.595 8.25312 14.6895 8.76574C9.9172 8.47927 5.69445 5.6642 2.8577 1.37589C2.36245 2.43343 2.07195 3.64389 2.07195 4.94697C2.07195 7.39374 3.0957 9.56266 4.6217 10.8184C3.69945 10.7968 2.7947 10.4673 2.0282 9.9482C2.0282 9.96974 2.0282 9.99774 2.0282 10.0257C2.0282 13.459 4.01795 16.3107 6.6272 16.9676C6.15995 17.1248 5.6507 17.2002 5.1222 17.2002C4.7547 17.2002 4.3837 17.1744 4.03545 17.0796C4.7792 19.8774 6.8897 21.9344 9.3992 22.0011C7.4462 23.8814 4.96645 25.0144 2.28195 25.0144C1.8112 25.0144 1.3597 24.9885 0.908203 24.9174C3.45095 26.9356 6.46445 28.0879 9.7142 28.0879C20.2772 28.0879 26.0522 17.3187 26.0522 7.98389C26.0522 7.67158 26.0435 7.37004 26.0312 7.07066C27.1705 6.07558 28.1277 4.83281 28.9082 3.40266Z"
+                        fill="white"
+                        class="fill-fillCeleste"
+                      />
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div>
+                    <svg
+                      width="29"
+                      height="29"
+                      viewBox="0 0 29 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M9.6582 0.0878906H20.1582C24.99 0.0878906 28.9082 4.00614 28.9082 8.83789V19.3379C28.9082 24.1696 24.99 28.0879 20.1582 28.0879H9.6582C4.82645 28.0879 0.908203 24.1696 0.908203 19.3379V8.83789C0.908203 4.00614 4.82645 0.0878906 9.6582 0.0878906ZM20.1578 25.4629C23.5353 25.4629 26.2828 22.7154 26.2828 19.3379V8.83789C26.2828 5.46039 23.5353 2.71289 20.1578 2.71289H9.65779C6.28029 2.71289 3.53279 5.46039 3.53279 8.83789V19.3379C3.53279 22.7154 6.28029 25.4629 9.65779 25.4629H20.1578Z"
+                        fill="white"
+                        class="fill-fillCeleste"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.90869 14.0898C7.90869 10.2241 11.0429 7.08984 14.9087 7.08984C18.7744 7.08984 21.9087 10.2241 21.9087 14.0898C21.9087 17.9556 18.7744 21.0898 14.9087 21.0898C11.0429 21.0898 7.90869 17.9556 7.90869 14.0898ZM10.5333 14.0898C10.5333 16.5013 12.4968 18.4648 14.9083 18.4648C17.3198 18.4648 19.2833 16.5013 19.2833 14.0898C19.2833 11.6766 17.3198 9.71484 14.9083 9.71484C12.4968 9.71484 10.5333 11.6766 10.5333 14.0898Z"
+                        fill="white"
+                        class="fill-fillCeleste"
+                      />
+                      <circle
+                        cx="22.4328"
+                        cy="6.56166"
+                        r="0.93275"
+                        fill="white"
+                        class="fill-fillCeleste"
+                      />
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t-2 border-[#E9E9E9] flex justify-between items-center"
+        >
+          <div class="flex flex-col justify-start gap-2 py-10">
+            <div class="flex items-center gap-2">
+              <div>
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.8335 4.9611L4.16683 9.62777L8.8335 14.2944M15.8335 4.9611L11.1668 9.62777L15.8335 14.2944"
+                    stroke="#3D8BF2"
+                    stroke-width="1.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <a
+                href="#"
+                class="text-textCeleste font-semibold text-text18 md:text-text22 leading-none"
+              >
+                Anterior
+              </a>
+            </div>
+            <p class="text-text20 md:text-text24 font-semibold hidden md:block">
+              Aenean tristique enim tellus
+            </p>
+          </div>
+
+          <div class="flex flex-col justify-end gap-2 py-5">
+            <div class="flex items-center justify-end gap-2">
+              <a
+                href="#"
+                class="text-textCeleste font-semibold text-text18 md:text-text22 leading-none"
+              >
+                Próximo
+              </a>
+
+              <div>
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1665 4.9611L15.8332 9.62777L11.1665 14.2944M4.1665 4.9611L8.83317 9.62777L4.1665 14.2944"
+                    stroke="#3D8BF2"
+                    stroke-width="1.66667"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p
+              class="text-text20 md:text-text24 font-semibold text-textAzulDark hidden md:block"
+            >
+              Neque porro quisquam est
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-bgAzulSuave">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto gap-12 py-12 text-textWhite"
+        data-aos="fade-up"
+        data-aos-offset="150"
+      >
+        <div class="flex flex-col gap-5">
+          <div>
+            <a href="index.html">
+              <img src="./images/img/logotipo_white.png" alt="uniyop" />
+            </a>
+          </div>
+          <p class="text-text20 md:text-text24 font-normal">
+            Construido con nosotros un mundo mejor
+          </p>
+          <div>
+            <div class="flex items-center gap-16">
+              <a href="#">
+                <div>
+                  <svg
+                    width="12"
+                    height="28"
+                    viewBox="0 0 12 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.73395 5.22556H11.908V1.0062C11.5329 0.948703 10.243 0.819336 8.74071 0.819336C5.6062 0.819336 3.45898 3.01637 3.45898 7.05439V10.7707H0V15.4876H3.45898V27.3562H7.69984V15.4887H11.0189L11.5458 10.7718H7.69885V7.52211C7.69984 6.15877 8.02927 5.22556 9.73395 5.22556Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <svg
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.9082 3.40266C27.867 3.96481 26.7575 4.33743 25.6007 4.51835C26.7907 3.64389 27.699 2.26974 28.126 0.613429C27.0165 1.42758 25.7915 2.00266 24.486 2.32358C23.4325 0.942968 21.931 0.0878906 20.293 0.0878906C17.115 0.0878906 14.5565 3.26266 14.5565 7.15466C14.5565 7.71466 14.595 8.25312 14.6895 8.76574C9.9172 8.47927 5.69445 5.6642 2.8577 1.37589C2.36245 2.43343 2.07195 3.64389 2.07195 4.94697C2.07195 7.39374 3.0957 9.56266 4.6217 10.8184C3.69945 10.7968 2.7947 10.4673 2.0282 9.9482C2.0282 9.96974 2.0282 9.99774 2.0282 10.0257C2.0282 13.459 4.01795 16.3107 6.6272 16.9676C6.15995 17.1248 5.6507 17.2002 5.1222 17.2002C4.7547 17.2002 4.3837 17.1744 4.03545 17.0796C4.7792 19.8774 6.8897 21.9344 9.3992 22.0011C7.4462 23.8814 4.96645 25.0144 2.28195 25.0144C1.8112 25.0144 1.3597 24.9885 0.908203 24.9174C3.45095 26.9356 6.46445 28.0879 9.7142 28.0879C20.2772 28.0879 26.0522 17.3187 26.0522 7.98389C26.0522 7.67158 26.0435 7.37004 26.0312 7.07066C27.1705 6.07558 28.1277 4.83281 28.9082 3.40266Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <svg
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.6582 0.0878906H20.1582C24.99 0.0878906 28.9082 4.00614 28.9082 8.83789V19.3379C28.9082 24.1696 24.99 28.0879 20.1582 28.0879H9.6582C4.82645 28.0879 0.908203 24.1696 0.908203 19.3379V8.83789C0.908203 4.00614 4.82645 0.0878906 9.6582 0.0878906ZM20.1578 25.4629C23.5353 25.4629 26.2828 22.7154 26.2828 19.3379V8.83789C26.2828 5.46039 23.5353 2.71289 20.1578 2.71289H9.65779C6.28029 2.71289 3.53279 5.46039 3.53279 8.83789V19.3379C3.53279 22.7154 6.28029 25.4629 9.65779 25.4629H20.1578Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.90869 14.0898C7.90869 10.2241 11.0429 7.08984 14.9087 7.08984C18.7744 7.08984 21.9087 10.2241 21.9087 14.0898C21.9087 17.9556 18.7744 21.0898 14.9087 21.0898C11.0429 21.0898 7.90869 17.9556 7.90869 14.0898ZM10.5333 14.0898C10.5333 16.5013 12.4968 18.4648 14.9083 18.4648C17.3198 18.4648 19.2833 16.5013 19.2833 14.0898C19.2833 11.6766 17.3198 9.71484 14.9083 9.71484C12.4968 9.71484 10.5333 11.6766 10.5333 14.0898Z"
+                      fill="white"
+                    />
+                    <circle
+                      cx="22.4328"
+                      cy="6.56166"
+                      r="0.93275"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-5 lg:gap-10 justify-start lg:justify-center items-center font-semibold text-text18 md:text-text22 text-center"
+        >
+          <a href="index.html">Home</a>
+          <a href="seParte.html">Sé parte de nosotros</a>
+          <a href="blog.html">Blog y Eventos</a>
+        </div>
+
+        <div class="flex justify-start lg:justify-center items-center">
+          <a
+            href="#apoyar"
+            class="bg-bgYellow leading-none py-5 rounded-2xl px-5 text-textGrayStrong text-text24 md:text-text28 font-semibold"
+            >Quiero apoyar</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/menuHamburguesa.js"></script>
+    <script src="./js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

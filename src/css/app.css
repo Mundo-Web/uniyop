@@ -1,0 +1,86 @@
+.swiper-button-prev {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.custom-swiper-buttons .swiper-button-prev:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/svg/prev.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swiper-button-next {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.custom-swiper-buttons .swiper-button-next:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/svg/next.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.custom-swiper-buttons {
+  position: relative;
+  display: none;
+  top: 50%;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .custom-swiper-buttons {
+    display: flex;
+    position: absolute;
+  }
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 0;
+  left: -100px;
+  z-index: 1000;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 0;
+  right: -100px;
+
+  z-index: 1000;
+}
+
+/* ------- */
+
+.text__underline::after {
+  content: "";
+  display: none;
+  width: 30%;
+  height: 4px;
+  background-color: #204088;
+}
+
+@media (min-width: 768px) {
+  .text__underline::after {
+    display: block;
+  }
+}
+
+.text__underline-evento::after {
+  width: 10%;
+}
+
+.text__underline-testimonios::after {
+  width: 10%;
+  background-color: #ffffff;
+}

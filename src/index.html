@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body class="font-asap">
+    <!-- hamburguesa -->
+    <div class="navigation z-[200]">
+      <button
+        aria-label="hamburguer"
+        type="button"
+        class="hamburger"
+        id="position"
+        onclick="show()"
+      >
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 2L2 18M18 18L2 2"
+            stroke="white"
+            stroke-width="2.66667"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+      <nav class="menu-list">
+        <ul>
+          <li>
+            <a href="index.html" class="">Home</a>
+          </li>
+          <li>
+            <a href="seParte.html" class="">Sé parte de nosotros</a>
+          </li>
+          <li>
+            <a href="blog.html" class="">Blog y Eventos</a>
+          </li>
+          <li>
+            <a href="#" class="">Quiero apoyar</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <div class="flex justify-center items-center py-8">
+        <img src="./images/img/logotipo.png" alt="uniyop" />
+      </div>
+      <div class="bg-bgCeleste text-textWhite">
+        <div
+          class="w-11/12 mx-auto py-5"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <nav
+            class="hidden 2md:flex justify-center items-center gap-24 font-semibold text-text18 md:text-text26 lg:text-text30 py-5 text-center"
+          >
+            <a href="index.html" class="leading-none">Home</a>
+            <a href="seParte.html" class="leading-none">Sé parte de nosotros</a>
+            <a href="blog.html" class="leading-none">Blog y Eventos</a>
+            <a
+              href="#apoyar"
+              class="bg-bgAzulMarino leading-none py-5 rounded-2xl px-5 hover:bg-blue-800 md:duration-300"
+            >
+              Quiero apoyar
+            </a>
+          </nav>
+
+          <div class="2md:hidden flex items-center">
+            <button aria-label="hamburguer" class="hamburger" onclick="show()">
+              <img
+                src="./images/svg/menu.svg"
+                alt="menu hamburguesa"
+                class="w-[1000px]"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end relative">
+        <div class="fixed bottom-[30px] right-[30px] z-[100]">
+          <a href="#">
+            <img
+              src="./images/img/image_45.png"
+              alt="whatsapp"
+              class="w-20 h-20 md:w-full md:h-full"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="bg-[url(../images/img/image_41.png)] bg-cover bg-center bg-no-repeat sm:w-full h-full py-24"
+      >
+        <div
+          class="grid grid-cols-1 xl:grid-cols-2 w-11/12 mx-auto gap-12 xl:gap-32"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <div class="flex flex-col justify-center gap-5 text-textWhite">
+            <h1
+              class="font-bold text-text48 md:text-text52 leading-none md:leading-tight"
+            >
+              Capacitaciones y Charlas para la Prevención de la Violencia
+              Doméstica
+            </h1>
+            <p class="font-normal text-text24 md:text-text28">
+              Participa en nuestras capacitaciones y charlas para convertirte en
+              un líder en la lucha contra la violencia doméstica. Aprende a
+              identificar señales de alerta, brindar apoyo y promover relaciones
+              saludables en tu comunidad.
+            </p>
+
+            <div class="flex">
+              <a
+                href="#"
+                class="text-textGrayStrong bg-bgYellow py-3 px-24 rounded-full font-semibold text-text18 md:text-text22 hover:bg-yellow-400 md:duration-300 w-full text-center md:w-auto"
+              >
+                Entrar
+              </a>
+            </div>
+          </div>
+
+          <div class="relative" id="scene" data-hover-only="true">
+            <img
+              src="./images/img/header2.png"
+              alt="uniyop"
+              data-depth="0.5"
+              class="w-full h-full"
+            />
+            <img
+              src="./images/img/header1.png"
+              alt="uniyop"
+              data-depth="0.6"
+              class="w-full h-full"
+            />
+            <img
+              src="./images/img/header3.png"
+              alt="uniyop"
+              data-depth="0.3"
+              class="w-full h-full"
+            />
+            <img
+              src="./images/img/header4.png"
+              alt="uniyop"
+              data-depth="0.9"
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="flex flex-col gap-10 w-11/12 mx-auto my-24">
+          <div
+            class="flex flex-col items-center gap-5"
+            data-aos="fade-up"
+            data-aos-offset="150"
+          >
+            <div class="text__underline flex flex-col items-center gap-3">
+              <h2
+                class="font-bold text-text48 md:text-text52 leading-none md:leading-tight text-textAzulMarino"
+              >
+                Por un Futuro Sin Violencia
+              </h2>
+            </div>
+
+            <p class="text-textGray font-normal text-text26 md:text-text30">
+              En UniYop, nos dedicamos a erradicar la violencia doméstica. A
+              través de apoyo, recursos y educación, trabajamos para crear
+              comunidades seguras y libres de abuso. Únete a nosotros en la
+              construcción de un futuro más seguro para todos.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10"
+            data-aos="fade-up"
+            data-aos-offset="150"
+          >
+            <div
+              class="flex flex-col justify-between hover:bg-bgPink bg-[#F7F8FA] rounded-3xl p-10 md:duration-300 group gap-12"
+            >
+              <div
+                class="text-textGray flex flex-col gap-3 group-hover:text-textWhite md:duration-300"
+              >
+                <div>
+                  <span class="bg-bgPinkStrong inline-block p-3 rounded-lg">
+                    <svg
+                      width="39"
+                      height="39"
+                      viewBox="0 0 39 39"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.49707 31.8001C9.12922 27.9477 14.0605 25.5801 19.492 25.5801C24.9236 25.5801 29.8549 27.9477 33.487 31.8001M26.4895 12.3627C26.4895 16.2273 23.3566 19.3601 19.492 19.3601C15.6274 19.3601 12.4946 16.2273 12.4946 12.3627C12.4946 8.49805 15.6274 5.36517 19.492 5.36517C23.3566 5.36517 26.4895 8.49805 26.4895 12.3627Z"
+                        stroke="#FCFCFD"
+                        stroke-width="3.10999"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                <h2
+                  class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                >
+                  Violencia Sexual
+                </h2>
+                <p class="text-text18 font-normal">
+                  La violencia sexual en el ámbito doméstico es una realidad
+                  alarmante. Se estima que el [Porcentaje]% de las mujeres en
+                  todo el mundo han experimentado violencia sexual por parte de
+                  su pareja íntima en algún momento de sus vidas.
+                </p>
+              </div>
+
+              <div class="flex justify-end items-center">
+                <a
+                  href="#"
+                  class="bg-bgPinkStrong w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-pink-400 md:duration-300"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 37 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                      stroke="#FCFCFD"
+                      stroke-width="3.00893"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-between hover:bg-bgPurposeSuave bg-[#F7F8FA] rounded-3xl p-10 md:duration-300 group gap-12"
+            >
+              <div
+                class="text-textGray flex flex-col gap-3 group-hover:text-textWhite md:duration-300"
+              >
+                <div>
+                  <span class="bg-bgPurposeStrong inline-block p-3 rounded-lg">
+                    <svg
+                      width="39"
+                      height="39"
+                      viewBox="0 0 39 39"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.49707 31.8001C9.12922 27.9477 14.0605 25.5801 19.492 25.5801C24.9236 25.5801 29.8549 27.9477 33.487 31.8001M26.4895 12.3627C26.4895 16.2273 23.3566 19.3601 19.492 19.3601C15.6274 19.3601 12.4946 16.2273 12.4946 12.3627C12.4946 8.49805 15.6274 5.36517 19.492 5.36517C23.3566 5.36517 26.4895 8.49805 26.4895 12.3627Z"
+                        stroke="#FCFCFD"
+                        stroke-width="3.10999"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                <h2
+                  class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                >
+                  Violencia Sexual
+                </h2>
+                <p class="text-text18 font-normal">
+                  La violencia sexual en el ámbito doméstico es una realidad
+                  alarmante. Se estima que el [Porcentaje]% de las mujeres en
+                  todo el mundo han experimentado violencia sexual por parte de
+                  su pareja íntima en algún momento de sus vidas.
+                </p>
+              </div>
+
+              <div class="flex justify-end items-center">
+                <a
+                  href="#"
+                  class="bg-bgPurposeStrong w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-purple-400 md:duration-300"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 37 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                      stroke="#FCFCFD"
+                      stroke-width="3.00893"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-between hover:bg-bgGreenSuave bg-[#F7F8FA] rounded-3xl p-10 md:duration-300 group gap-12"
+            >
+              <div
+                class="text-textGray flex flex-col gap-3 group-hover:text-textWhite md:duration-300"
+              >
+                <div>
+                  <span class="bg-bgGreenStrong inline-block p-3 rounded-lg">
+                    <svg
+                      width="39"
+                      height="39"
+                      viewBox="0 0 39 39"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.49707 31.8001C9.12922 27.9477 14.0605 25.5801 19.492 25.5801C24.9236 25.5801 29.8549 27.9477 33.487 31.8001M26.4895 12.3627C26.4895 16.2273 23.3566 19.3601 19.492 19.3601C15.6274 19.3601 12.4946 16.2273 12.4946 12.3627C12.4946 8.49805 15.6274 5.36517 19.492 5.36517C23.3566 5.36517 26.4895 8.49805 26.4895 12.3627Z"
+                        stroke="#FCFCFD"
+                        stroke-width="3.10999"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                <h2
+                  class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                >
+                  Violencia Sexual
+                </h2>
+                <p class="text-text18 font-normal">
+                  La violencia sexual en el ámbito doméstico es una realidad
+                  alarmante. Se estima que el [Porcentaje]% de las mujeres en
+                  todo el mundo han experimentado violencia sexual por parte de
+                  su pareja íntima en algún momento de sus vidas.
+                </p>
+              </div>
+
+              <div class="flex justify-end items-center">
+                <a
+                  href="#"
+                  class="bg-bgGreenStrong w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-green-400 md:duration-300"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 37 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                      stroke="#FCFCFD"
+                      stroke-width="3.00893"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-between hover:bg-bgYellowSuave bg-[#F7F8FA] rounded-3xl p-10 md:duration-300 group gap-12"
+            >
+              <div
+                class="text-textGray flex flex-col gap-3 group-hover:text-textWhite md:duration-300"
+              >
+                <div>
+                  <span class="bg-bgYellowStrong inline-block p-3 rounded-lg">
+                    <svg
+                      width="39"
+                      height="39"
+                      viewBox="0 0 39 39"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.49707 31.8001C9.12922 27.9477 14.0605 25.5801 19.492 25.5801C24.9236 25.5801 29.8549 27.9477 33.487 31.8001M26.4895 12.3627C26.4895 16.2273 23.3566 19.3601 19.492 19.3601C15.6274 19.3601 12.4946 16.2273 12.4946 12.3627C12.4946 8.49805 15.6274 5.36517 19.492 5.36517C23.3566 5.36517 26.4895 8.49805 26.4895 12.3627Z"
+                        stroke="#FCFCFD"
+                        stroke-width="3.10999"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </div>
+
+                <h2
+                  class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                >
+                  Violencia Sexual
+                </h2>
+                <p class="text-text18 font-normal">
+                  La violencia sexual en el ámbito doméstico es una realidad
+                  alarmante. Se estima que el [Porcentaje]% de las mujeres en
+                  todo el mundo han experimentado violencia sexual por parte de
+                  su pareja íntima en algún momento de sus vidas.
+                </p>
+              </div>
+
+              <div class="flex justify-end items-center">
+                <a
+                  href="#"
+                  class="bg-bgYellowStrong w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-yellow-400 md:duration-300"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 37 37"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                      stroke="#FCFCFD"
+                      stroke-width="3.00893"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="bg-[url(../images/img/image_42.png)] bg-cover bg-center bg-no-repeat sm:w-full h-full py-24"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 w-11/12 mx-auto gap-24"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <div class="flex justify-center items-center">
+            <img
+              src="./images/img/image_24.png"
+              alt="uniyop"
+              class="w-full h-full"
+            />
+          </div>
+          <div>
+            <div
+              class="relative ring-gray-900/5 sm:mx-auto sm:rounded-lg text-textWhite h-full"
+            >
+              <div class="h-full flex flex-col justify-center">
+                <div
+                  class="grid max-w-[900px] divide-y divide-neutral-200"
+                  data-aos="fade-up"
+                  data-aos-offset="150"
+                >
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex cursor-pointer list-none items-center justify-between font-semibold"
+                      >
+                        <span class="font-bold text-text40 md:text-text44">
+                          ¿Quienes somos?
+                        </span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.17736 3.72824C1.51789 3.3994 2.06052 3.40886 2.38937 3.74939L7.15275 8.68202L5.91958 9.87288L1.1562 4.94025C0.827356 4.59972 0.836834 4.05708 1.17736 3.72824Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M4.84668 8.67969L9.61006 3.74706C9.9389 3.40653 10.4815 3.39707 10.8221 3.72591C11.1626 4.05475 11.1721 4.59739 10.8432 4.93791L6.07985 9.87054L4.84668 8.67969Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                      </summary>
+                      <p
+                        class="group-open:animate-fadeIn mt-3 text-text20 md:text-text24"
+                      >
+                        Springerdata offers a variety of billing options,
+                        including monthly and annual subscription plans, as well
+                        as pay-as-you-go pricing for certain services. Payment
+                        is typically made through a credit card or other secure
+                        online payment method.
+                      </p>
+                    </details>
+                  </div>
+
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex cursor-pointer list-none items-center justify-between font-semibold"
+                      >
+                        <span class="font-bold text-text40 md:text-text44">
+                          ¿Qué hacemos?
+                        </span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.17736 3.72824C1.51789 3.3994 2.06052 3.40886 2.38937 3.74939L7.15275 8.68202L5.91958 9.87288L1.1562 4.94025C0.827356 4.59972 0.836834 4.05708 1.17736 3.72824Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M4.84668 8.67969L9.61006 3.74706C9.9389 3.40653 10.4815 3.39707 10.8221 3.72591C11.1626 4.05475 11.1721 4.59739 10.8432 4.93791L6.07985 9.87054L4.84668 8.67969Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                      </summary>
+                      <p
+                        class="group-open:animate-fadeIn mt-3 text-text20 md:text-text24"
+                      >
+                        A lo largo de los años, [Nombre de la ONG] ha marcado
+                        una diferencia tangible en la vida de innumerables
+                        personas, brindando refugio seguro, asesoramiento
+                        profesional y programas de prevención innovadores. Su
+                        enfoque integral no solo se centra en la intervención y
+                        el apoyo a las víctimas, sino también en la educación y
+                        la concienciación pública para prevenir futuros casos de
+                        violencia doméstica.
+                      </p>
+                    </details>
+                  </div>
+                  <div class="py-5">
+                    <details class="group">
+                      <summary
+                        class="flex cursor-pointer list-none items-center justify-between font-semibold"
+                      >
+                        <span class="font-bold text-text40 md:text-text44">
+                          ¿Por qué lo hacemos?
+                        </span>
+                        <span class="transition group-open:rotate-180">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 12 13"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.17736 3.72824C1.51789 3.3994 2.06052 3.40886 2.38937 3.74939L7.15275 8.68202L5.91958 9.87288L1.1562 4.94025C0.827356 4.59972 0.836834 4.05708 1.17736 3.72824Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M4.84668 8.67969L9.61006 3.74706C9.9389 3.40653 10.4815 3.39707 10.8221 3.72591C11.1626 4.05475 11.1721 4.59739 10.8432 4.93791L6.07985 9.87054L4.84668 8.67969Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                      </summary>
+                      <p
+                        class="group-open:animate-fadeIn mt-3 text-text20 md:text-text24"
+                      >
+                        Hoy en día, [Nombre de la ONG] sigue comprometida con su
+                        misión original, pero también mira hacia el futuro con
+                        esperanza y determinación. Con el apoyo continuo de sus
+                        colaboradores, voluntarios y aliados, están decididos a
+                        seguir adelante en su búsqueda de un mundo donde todas
+                        las personas puedan vivir libres de violencia y temor.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24">
+        <div
+          class="w-11/12 mx-auto flex flex-col gap-10 items-center"
+          data-aos="fade-up"
+          data-aos-offset="150"
+        >
+          <div class="text__underline flex flex-col items-center pb-12 gap-3">
+            <h2
+              class="font-bold text-text48 md:text-text52 leading-none md:leading-tight text-textAzulMarino"
+            >
+              Nuestro equipo
+            </h2>
+          </div>
+
+          <div data-aos="fade-up" data-aos-offset="150">
+            <div class="flex justify-center items-center col-span-12">
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12"
+              >
+                <div>
+                  <div class="flex items-center justify-center">
+                    <div class="group h-[500px] w-96 [perspective:1000px]">
+                      <div
+                        class="relative h-[500px] w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+                      >
+                        <div class="absolute inset-0">
+                          <img
+                            class="h-full w-full rounded-xl object-cover"
+                            src="./images/img/image_34.png"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="absolute inset-0 h-full w-full rounded-xl bg-black/40 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                        >
+                          <div
+                            class="flex min-h-full flex-col items-start justify-end pb-8"
+                          >
+                            <h1 class="text-text24 font-bold">Jane Doe</h1>
+                            <p class="text-text20 text-left">
+                              Suspendisse mauris arcu, ultricies non iaculis
+                              iaculis, faucibus id libero.
+                            </p>
+                            <div class="flex flex-row space-x-3 pt-3">
+                              <a>
+                                <img
+                                  src="./images/svg/insta.svg"
+                                  alt="instagram"
+                                />
+                              </a>
+                              <a>
+                                <img
+                                  src="./images/svg/linked in.svg"
+                                  alt="linkedin"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-center">
+                    <div class="group h-[500px] w-96 [perspective:1000px]">
+                      <div
+                        class="relative h-[500px] w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+                      >
+                        <div class="absolute inset-0">
+                          <img
+                            class="h-full w-full rounded-xl object-cover"
+                            src="./images/img/image_35.png"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="absolute inset-0 h-full w-full rounded-xl bg-black/40 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                        >
+                          <div
+                            class="flex min-h-full flex-col items-start justify-end pb-8"
+                          >
+                            <h1 class="text-text24 font-bold">Jane Doe</h1>
+                            <p class="text-text20 text-left">
+                              Suspendisse mauris arcu, ultricies non iaculis
+                              iaculis, faucibus id libero.
+                            </p>
+                            <div class="flex flex-row space-x-3 pt-3">
+                              <a>
+                                <img
+                                  src="./images/svg/insta.svg"
+                                  alt="instagram"
+                                />
+                              </a>
+                              <a>
+                                <img
+                                  src="./images/svg/linked in.svg"
+                                  alt="linkedin"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-center">
+                    <div class="group h-[500px] w-96 [perspective:1000px]">
+                      <div
+                        class="relative h-[500px] w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+                      >
+                        <div class="absolute inset-0">
+                          <img
+                            class="h-full w-full rounded-xl object-cover"
+                            src="./images/img/image_36.png"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="absolute inset-0 h-full w-full rounded-xl bg-black/40 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                        >
+                          <div
+                            class="flex min-h-full flex-col items-start justify-end pb-8"
+                          >
+                            <h1 class="text-text24 font-bold">Jane Doe</h1>
+                            <p class="text-text20 text-left">
+                              Suspendisse mauris arcu, ultricies non iaculis
+                              iaculis, faucibus id libero.
+                            </p>
+                            <div class="flex flex-row space-x-3 pt-3">
+                              <a>
+                                <img
+                                  src="./images/svg/insta.svg"
+                                  alt="instagram"
+                                />
+                              </a>
+                              <a>
+                                <img
+                                  src="./images/svg/linked in.svg"
+                                  alt="linkedin"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex items-center justify-center">
+                    <div class="group h-[500px] w-96 [perspective:1000px]">
+                      <div
+                        class="relative h-[500px] w-full rounded-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+                      >
+                        <div class="absolute inset-0">
+                          <img
+                            class="h-full w-full rounded-xl object-cover"
+                            src="./images/img/image_34.png"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="absolute inset-0 h-full w-full rounded-xl bg-black/40 px-8 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]"
+                        >
+                          <div
+                            class="flex min-h-full flex-col items-start justify-end pb-8"
+                          >
+                            <h1 class="text-text24 font-bold">Jane Doe</h1>
+                            <p class="text-text20 text-left">
+                              Suspendisse mauris arcu, ultricies non iaculis
+                              iaculis, faucibus id libero.
+                            </p>
+                            <div class="flex flex-row space-x-3 pt-3">
+                              <a>
+                                <img
+                                  src="./images/svg/insta.svg"
+                                  alt="instagram"
+                                />
+                              </a>
+                              <a>
+                                <img
+                                  src="./images/svg/linked in.svg"
+                                  alt="linkedin"
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-bgPurposeBack text-textWhite py-24">
+          <div
+            class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24"
+            data-aos="fade-up"
+            data-aos-offset="150"
+          >
+            <div class="flex flex-col gap-10 justify-center">
+              <h2
+                class="font-bold text-text48 md:text-text52 leading-none md:leading-tight"
+              >
+                Juntos podemos hacer la diferencia: Dona para combatir la
+                violencia doméstica
+              </h2>
+              <p class="text-text18 md:text-text22 font-normal">
+                Tu generosidad puede cambiar vidas. Con tu donación, podemos
+                ofrecer refugio, apoyo emocional y recursos educativos a quienes
+                sufren violencia doméstica. Cada contribución cuenta. Únete a
+                nosotros en esta importante misión y juntos construyamos un
+                futuro más seguro para todos.
+              </p>
+
+              <div class="flex justify-start items-center">
+                <a
+                  href="#apoyar"
+                  class="bg-bgPinkStrong leading-none py-5 rounded-2xl px-5 text-text24 md:text-text28 font-semibold hover:bg-pink-400 md:duration-500"
+                >
+                  Quiero apoyar
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <img
+                src="./images/img/image_25.png"
+                alt="uniyop"
+                class="w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-bgAzulCeleste py-24">
+        <div class="w-11/12 mx-auto" data-aos="fade-up" data-aos-offset="150">
+          <div
+            class="text__underline flex flex-col gap-3 items-center text__underline-testimonios"
+          >
+            <h2
+              class="font-bold text-text48 md:text-text52 leading-none md:leading-tight text-white text-center"
+            >
+              Testimonios Felices
+            </h2>
+          </div>
+
+          <!--  -->
+
+          <div class="mt-16 w-full lg:w-9/12 mx-auto bg-[#3084E2] relative">
+            <div class="swiper testimonios rounded-2xl">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div
+                    class="flex flex-col gap-5 items-center bg-white p-10 rounded-2xl"
+                  >
+                    <p
+                      class="text-textGray italic font-medium text-text24 md:text-text28 text-center"
+                    >
+                      Apoyar a UniYop es un privilegio. Saber que mi donación
+                      está ayudando a combatir la violencia doméstica me llena
+                      de esperanza. Cada aporte cuenta y estoy orgulloso de ser
+                      parte de este importante cambio.
+                    </p>
+
+                    <p class="font-bold text-text24 md:text-text28">
+                      Ademir Neyra
+                    </p>
+                    <p class="font-medium text-text16 md:text-text20">
+                      Voluntario
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="custom-swiper-buttons">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="w-11/12 mx-auto my-24">
+          <div
+            class="flex flex-col gap-16 items-center"
+            data-aos="fade-up"
+            data-aos-offset="150"
+          >
+            <div class="text__underline flex flex-col items-center">
+              <h2
+                class="font-bold text-text48 md:text-text52 leading-none md:leading-tight text-textAzulMarino text-center"
+              >
+                Últimas noticias
+              </h2>
+            </div>
+
+            <div
+              class="grid grid-cols-1 grid-rows-1 lg:grid-rows-2 lg:grid-cols-2 gap-12"
+            >
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 bg-bgCard rounded-xl"
+                data-aos="fade-up"
+                data-aos-offset="150"
+              >
+                <div>
+                  <img
+                    src="./images/img/image_26.png"
+                    alt="uniyop"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="p-5">
+                  <div
+                    class="text-textGray flex flex-col justify-between h-full gap-12"
+                  >
+                    <div class="flex flex-col gap-5">
+                      <h2
+                        class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                      >
+                        Los derechos humanos de las mujeres y la igualdad de
+                        género
+                      </h2>
+                      <p class="text-text14 md:text-text18 font-normal">
+                        Garantizar de manera efectiva que las mujeres, las
+                        niñas, los hombres, los niños y las personas.
+                      </p>
+                    </div>
+
+                    <div class="flex justify-end items-center">
+                      <a
+                        href="post.html"
+                        class="bg-bgAzulSuave w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-blue-400 md:duration-300"
+                      >
+                        <svg
+                          width="40"
+                          height="40"
+                          viewBox="0 0 37 37"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                            stroke="#FCFCFD"
+                            stroke-width="3.00893"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 bg-bgCard rounded-xl"
+                data-aos="fade-up"
+                data-aos-offset="150"
+              >
+                <div>
+                  <img
+                    src="./images/img/image_27.png"
+                    alt="uniyop"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="p-5">
+                  <div
+                    class="text-textGray flex flex-col justify-between h-full"
+                  >
+                    <div class="flex flex-col gap-5">
+                      <h2
+                        class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                      >
+                        Los derechos humanos de las mujeres y la igualdad de
+                        género
+                      </h2>
+                      <p class="text-text14 md:text-text18 font-normal">
+                        Garantizar de manera efectiva que las mujeres, las
+                        niñas, los hombres, los niños y las personas.
+                      </p>
+                    </div>
+
+                    <div class="flex justify-end items-center">
+                      <a
+                        href="post.html"
+                        class="bg-bgAzulSuave w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-blue-400 md:duration-300"
+                      >
+                        <svg
+                          width="40"
+                          height="40"
+                          viewBox="0 0 37 37"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                            stroke="#FCFCFD"
+                            stroke-width="3.00893"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 bg-bgCard rounded-xl"
+                data-aos="fade-up"
+                data-aos-offset="150"
+              >
+                <div>
+                  <img
+                    src="./images/img/image_28.png"
+                    alt="uniyop"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="p-5">
+                  <div
+                    class="text-textGray flex flex-col justify-between h-full"
+                  >
+                    <div class="flex flex-col gap-5">
+                      <h2
+                        class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                      >
+                        Los derechos humanos de las mujeres y la igualdad de
+                        género
+                      </h2>
+                      <p class="text-text14 md:text-text18 font-normal">
+                        Garantizar de manera efectiva que las mujeres, las
+                        niñas, los hombres, los niños y las personas.
+                      </p>
+                    </div>
+
+                    <div class="flex justify-end items-center">
+                      <a
+                        href="post.html"
+                        class="bg-bgAzulSuave w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-blue-400 md:duration-300"
+                      >
+                        <svg
+                          width="40"
+                          height="40"
+                          viewBox="0 0 37 37"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                            stroke="#FCFCFD"
+                            stroke-width="3.00893"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 bg-bgCard rounded-xl"
+                data-aos="fade-up"
+                data-aos-offset="150"
+              >
+                <div>
+                  <img
+                    src="./images/img/image_29.png"
+                    alt="uniyop"
+                    class="w-full h-full"
+                  />
+                </div>
+                <div class="p-5">
+                  <div
+                    class="text-textGray flex flex-col justify-between h-full"
+                  >
+                    <div class="flex flex-col gap-5">
+                      <h2
+                        class="font-semibold text-text24 md:text-text28 leading-none md:leading-tight"
+                      >
+                        Los derechos humanos de las mujeres y la igualdad de
+                        género
+                      </h2>
+                      <p class="text-text14 md:text-text18 font-normal">
+                        Garantizar de manera efectiva que las mujeres, las
+                        niñas, los hombres, los niños y las personas.
+                      </p>
+                    </div>
+
+                    <div class="flex justify-end items-center">
+                      <a
+                        href="post.html"
+                        class="bg-bgAzulSuave w-24 h-16 inline-flex justify-center items-center rounded-xl hover:bg-blue-400 md:duration-300"
+                      >
+                        <svg
+                          width="40"
+                          height="40"
+                          viewBox="0 0 37 37"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M18.5437 24.0655L24.5615 18.0477M24.5615 18.0477L18.5437 12.0298M24.5615 18.0477H12.5258M33.5883 18.0477C33.5883 26.3566 26.8526 33.0923 18.5437 33.0923C10.2347 33.0923 3.49902 26.3566 3.49902 18.0477C3.49902 9.73876 10.2347 3.00305 18.5437 3.00305C26.8526 3.00305 33.5883 9.73876 33.5883 18.0477Z"
+                            stroke="#FCFCFD"
+                            stroke-width="3.00893"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-bgCard py-12">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-32 w-11/12 mx-auto"
+            data-aos="fade-up"
+            data-aos-offset="150"
+          >
+            <div>
+              <form action="">
+                <div class="flex flex-col gap-5">
+                  <div
+                    class="flex flex-col gap-2 font-normal text-textGray text-text16 md:text-text20"
+                  >
+                    <label for="nombre"> Nombre </label>
+                    <input
+                      id="nombre"
+                      type="text"
+                      placeholder="Nombre completo"
+                      class="border-none py-3 px-5 w-full bg-white rounded-lg border-2 focus:outline-[#4E82C2]"
+                    />
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-2 font-normal text-textGray text-text16 md:text-text20"
+                  >
+                    <label for="correo"> Correo electrónico </label>
+                    <input
+                      id="correo"
+                      type="email"
+                      placeholder="Correo electrónico"
+                      class="border-none py-3 px-5 w-full bg-white rounded-lg border-2 focus:outline-[#4E82C2]"
+                    />
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-2 font-normal text-textGray text-text16 md:text-text20"
+                  >
+                    <label for="Teléfono"> Teléfono </label>
+                    <input
+                      id="teléfono"
+                      type="text"
+                      placeholder="(+51)"
+                      class="border-none py-3 px-5 w-full bg-white rounded-lg border-2 focus:outline-[#4E82C2]"
+                    />
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-2 font-normal text-textGray text-text16 md:text-text20"
+                  >
+                    <label for="nombre"> Mensaje </label>
+
+                    <textarea
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="5"
+                      class="border-none py-3 px-5 w-full bg-white rounded-lg border-2 focus:outline-[#4E82C2]"
+                      placeholder="Hola ..."
+                    ></textarea>
+                  </div>
+
+                  <div
+                    class="flex flex-col gap-2 font-normal text-textGray text-text16 md:text-text20"
+                  >
+                    <label for="ubigeo"> ¿Cómo nos encontraste? </label>
+                    <div class="h-14 border-b border-gray-300">
+                      <select
+                        name="servicios"
+                        id="ubigeo"
+                        aria-label="Ubicacion"
+                        class="w-full h-full px-4 border-none outline-none font-normal text-textGray text-text16 md:text-text20"
+                      >
+                        <option value="" class="">
+                          ¿Cómo nos encontraste?
+                        </option>
+                        <option value="1" class="">Sitio web</option>
+                        <option value="1" class="">Rdesde sociales</option>
+                        <option value="2" class="">Recomendación</option>
+                        <option value="3" class="">Otro</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div>
+                    <input
+                      type="submit"
+                      value="Enviar"
+                      class="font-bold text-text24 md:text-text28 rounded-2xl bg-bgAzulSuave text-textWhite w-full py-3 px-5 hover:bg-bgCeleste md:duration-300 cursor-pointer"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="flex flex-col gap-10">
+              <div class="flex flex-col gap-5">
+                <h2
+                  class="font-bold text-text56 md:text-text60 leading-none md:leading-tight text-textAzulMarino"
+                >
+                  ¿Tienes alguna pregunta o comentario?
+                </h2>
+
+                <p class="font-normal text-text20 md:text-text24 text-textGray">
+                  ¡Nos encantaría saber de ti! Ponte en contacto con nosotros a
+                  través del formulario a continuación o visítanos en nuestras
+                  redes sociales.
+                </p>
+              </div>
+
+              <div>
+                <p class="font-normal text-text20 md:text-text24 text-textGray">
+                  Teléfono
+                </p>
+                <a
+                  href="#"
+                  class="text-text24 md:text-text28 font-semibold text-textAzulMarino"
+                  >+51 999 999 999</a
+                >
+              </div>
+
+              <div>
+                <p class="font-normal text-text20 md:text-text24 text-textGray">
+                  E-mail
+                </p>
+                <a
+                  href="#"
+                  class="text-text24 md:text-text28 font-semibold text-textAzulMarino"
+                  >info@uniyopong.com.pe</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-bgAzulSuave">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-3 w-11/12 mx-auto gap-12 py-12 text-textWhite"
+        data-aos="fade-up"
+        data-aos-offset="150"
+      >
+        <div class="flex flex-col gap-5">
+          <div>
+            <a href="index.html">
+              <img src="./images/img/logotipo_white.png" alt="uniyop" />
+            </a>
+          </div>
+          <p class="text-text20 md:text-text24 font-normal">
+            Construido con nosotros un mundo mejor
+          </p>
+          <div>
+            <div class="flex items-center gap-16">
+              <a href="#">
+                <div>
+                  <svg
+                    width="12"
+                    height="28"
+                    viewBox="0 0 12 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.73395 5.22556H11.908V1.0062C11.5329 0.948703 10.243 0.819336 8.74071 0.819336C5.6062 0.819336 3.45898 3.01637 3.45898 7.05439V10.7707H0V15.4876H3.45898V27.3562H7.69984V15.4887H11.0189L11.5458 10.7718H7.69885V7.52211C7.69984 6.15877 8.02927 5.22556 9.73395 5.22556Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <svg
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M28.9082 3.40266C27.867 3.96481 26.7575 4.33743 25.6007 4.51835C26.7907 3.64389 27.699 2.26974 28.126 0.613429C27.0165 1.42758 25.7915 2.00266 24.486 2.32358C23.4325 0.942968 21.931 0.0878906 20.293 0.0878906C17.115 0.0878906 14.5565 3.26266 14.5565 7.15466C14.5565 7.71466 14.595 8.25312 14.6895 8.76574C9.9172 8.47927 5.69445 5.6642 2.8577 1.37589C2.36245 2.43343 2.07195 3.64389 2.07195 4.94697C2.07195 7.39374 3.0957 9.56266 4.6217 10.8184C3.69945 10.7968 2.7947 10.4673 2.0282 9.9482C2.0282 9.96974 2.0282 9.99774 2.0282 10.0257C2.0282 13.459 4.01795 16.3107 6.6272 16.9676C6.15995 17.1248 5.6507 17.2002 5.1222 17.2002C4.7547 17.2002 4.3837 17.1744 4.03545 17.0796C4.7792 19.8774 6.8897 21.9344 9.3992 22.0011C7.4462 23.8814 4.96645 25.0144 2.28195 25.0144C1.8112 25.0144 1.3597 24.9885 0.908203 24.9174C3.45095 26.9356 6.46445 28.0879 9.7142 28.0879C20.2772 28.0879 26.0522 17.3187 26.0522 7.98389C26.0522 7.67158 26.0435 7.37004 26.0312 7.07066C27.1705 6.07558 28.1277 4.83281 28.9082 3.40266Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#">
+                <div>
+                  <svg
+                    width="29"
+                    height="29"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.6582 0.0878906H20.1582C24.99 0.0878906 28.9082 4.00614 28.9082 8.83789V19.3379C28.9082 24.1696 24.99 28.0879 20.1582 28.0879H9.6582C4.82645 28.0879 0.908203 24.1696 0.908203 19.3379V8.83789C0.908203 4.00614 4.82645 0.0878906 9.6582 0.0878906ZM20.1578 25.4629C23.5353 25.4629 26.2828 22.7154 26.2828 19.3379V8.83789C26.2828 5.46039 23.5353 2.71289 20.1578 2.71289H9.65779C6.28029 2.71289 3.53279 5.46039 3.53279 8.83789V19.3379C3.53279 22.7154 6.28029 25.4629 9.65779 25.4629H20.1578Z"
+                      fill="white"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.90869 14.0898C7.90869 10.2241 11.0429 7.08984 14.9087 7.08984C18.7744 7.08984 21.9087 10.2241 21.9087 14.0898C21.9087 17.9556 18.7744 21.0898 14.9087 21.0898C11.0429 21.0898 7.90869 17.9556 7.90869 14.0898ZM10.5333 14.0898C10.5333 16.5013 12.4968 18.4648 14.9083 18.4648C17.3198 18.4648 19.2833 16.5013 19.2833 14.0898C19.2833 11.6766 17.3198 9.71484 14.9083 9.71484C12.4968 9.71484 10.5333 11.6766 10.5333 14.0898Z"
+                      fill="white"
+                    />
+                    <circle
+                      cx="22.4328"
+                      cy="6.56166"
+                      r="0.93275"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex gap-5 lg:gap-10 justify-start lg:justify-center items-center font-semibold text-text18 md:text-text22 text-center"
+        >
+          <a href="index.html">Home</a>
+          <a href="seParte.html">Sé parte de nosotros</a>
+          <a href="blog.html">Blog y Eventos</a>
+        </div>
+
+        <div class="flex justify-start lg:justify-center items-center">
+          <a
+            href="#apoyar"
+            class="bg-bgYellow leading-none py-5 rounded-2xl px-5 text-textGrayStrong text-text24 md:text-text28 font-semibold hover:bg-yellow-400 md:duration-300"
+            >Quiero apoyar</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/aos.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/parallax.min.js"></script>
+    <script>
+      var scene = document.getElementById("scene");
+      var parallaxInstance = new Parallax(scene);
+    </script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
