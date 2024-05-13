@@ -794,6 +794,50 @@
                             </label>
                           </div>
                         </div>
+
+                        <div class="voucher hidden">
+                          <div
+                            class="flex flex-col gap-2 bg-[#F7F8FA] p-5 rounded-xl"
+                          >
+                            <p>Cuenta Bancaria</p>
+                            <p>C.C. 0000 0000 00000 0000</p>
+                          </div>
+
+                          <label
+                            class="flex justify-end gap-2 items-center cursor-pointer"
+                            for="open-file"
+                          >
+                            <div>
+                              <svg
+                                width="25"
+                                height="25"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M3.92857 10.2859C2.86345 10.2859 2 9.61932 2 8.64201C2 7.66469 2.86345 6.87242 3.92857 6.87242C4.001 6.87242 4.0725 6.87609 4.14286 6.88322V6.87242H4.16938C4.15188 6.7436 4.14286 6.61236 4.14286 6.47918C4.14286 4.74173 5.67788 3.33325 7.57143 3.33325C8.85368 3.33325 9.97154 3.97913 10.5597 4.93566C10.7034 4.91626 10.8504 4.90622 11 4.90622C12.6569 4.90622 14 6.13864 14 7.6589C14 8.91037 13.0898 9.86438 11.8437 10.1789M7.90531 12.6666V8.15046M7.90531 8.15046L5.9375 10.013M7.90531 8.15046L9.875 10.013"
+                                  stroke="#E398BB"
+                                  stroke-width="1.33333"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg>
+                            </div>
+                            <p
+                              class="text-[#E398BB] font-normal text-text12 md:text-text14"
+                            >
+                              Adjuntar comprobante
+                            </p>
+                          </label>
+                          <input
+                            type="file"
+                            name="archivo"
+                            accept=".pdf,.png"
+                            class="hidden"
+                            id="open-file"
+                          />
+                        </div>
                       </div>
 
                       <div
@@ -970,6 +1014,17 @@
 
     <script src="./js/menuHamburguesa.js"></script>
     <script src="./js/aos.js"></script>
+    <script>
+      const transferencia = document.getElementById("transferencia");
+      const voucher = document.querySelector(".voucher");
+      transferencia.addEventListener("change", function () {
+        if (this.checked) {
+          voucher.classList.remove("hidden");
+        } else {
+          voucher.classList.add("hidden");
+        }
+      });
+    </script>
     <script>
       AOS.init();
     </script>

@@ -1241,6 +1241,10 @@ video {
   font-family: Asap, sans-serif;
 }
 
+.text-text12{
+  font-size: 12px;
+}
+
 .text-text14{
   font-size: 14px;
 }
@@ -1307,6 +1311,11 @@ video {
 
 .leading-none{
   line-height: 1;
+}
+
+.text-\[\#E398BB\]{
+  --tw-text-opacity: 1;
+  color: rgb(227 152 187 / var(--tw-text-opacity));
 }
 
 .text-slate-200{
@@ -1592,6 +1601,10 @@ video {
 
   .md\:gap-24{
     gap: 6rem;
+  }
+
+  .md\:text-text14{
+    font-size: 14px;
   }
 
   .md\:text-text18{
